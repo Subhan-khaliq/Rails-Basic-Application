@@ -1,0 +1,10 @@
+<h1>Students Information</h1>
+<h2><%=@student.name%></h2>
+<br>
+<h2><%=@student.section%></h2>
+<br>
+<h2><%=@student.roll_number%></h2>
+
+<%=link_to 'Edit Information', edit_student_information_path(@student)%>
+
+<%=link_to 'Delete Information', student_information_path(@student), method: :delete%>

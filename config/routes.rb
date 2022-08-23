@@ -2,6 +2,13 @@
 
 Rails.application.routes.draw do
   devise_for :users
-  resources :blogs
-  root 'blogs#index'
+  namespace :admin do
+    resources :blogs
+  end
+
+  # resources :blogs
+  resources :student_informations
+
+  root 'student_informations#index'
+
 end

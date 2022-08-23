@@ -1,0 +1,13 @@
+<h1>Students Information</h1>
+<h2><%@student.each do |s|%></h2>
+<h3><%=s.name%></h3>
+<br>
+<h3><%=s.section%></h3>
+<br>
+<h3><%=s.roll_number%></h3>
+<br>
+<%end%>
+
+<%=link_to 'Register Student', new_student_information_path(@student)%>
+
+
