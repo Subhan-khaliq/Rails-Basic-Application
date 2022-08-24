@@ -1,0 +1,8 @@
+
+<% @blog.each do |blog|%>
+<h2><%=blog.title%></h2>
+<h3><%=blog.body%></h3>
+<br>
+<%= link_to "Read More", [:admin, blog]%>
+
+<%end%>

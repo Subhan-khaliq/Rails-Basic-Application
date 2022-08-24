@@ -1,8 +1,6 @@
+<%= render 'shared/show' %>
 <h1>Your Blogs</h1>
 
-<% @blog.each do |blog|%>
-<h2><%=blog.title%></h2>
-<h3><%=blog.body%></h3>
-<br>
-<%= link_to "Read More", [:admin, blog]%>
-<%end%>
+<%= render :partial => 'shared/display'%>
+
+

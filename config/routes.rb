@@ -8,7 +8,7 @@ Rails.application.routes.draw do
 
   # resources :blogs
   resources :student_informations
+  get '/friend/add_friend', to: 'admin/blogs#add_friend'
 
   root 'student_informations#index'
-
 end
